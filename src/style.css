@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html, body, #app {
+    height: 100%;
+    margin: 0;
+  }
+  body {
+    @apply bg-ink-900 text-slate-200 font-sans antialiased;
+  }
+}
+
+@layer utilities {
+  .scrollbar-thin::-webkit-scrollbar { width: 6px; }
+  .scrollbar-thin::-webkit-scrollbar-thumb { @apply bg-ink-500 rounded-full; }
+  .scrollbar-thin::-webkit-scrollbar-track { background: transparent; }
+}
